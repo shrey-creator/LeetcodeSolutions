@@ -19,9 +19,8 @@ void helper(string s,int i,string final,vector<string> &ans)
         ans.push_back(final);
         return;
     }
-    final.push_back(s[i]);
     helper(s,i+1,final,ans);
-    final.pop_back();
+    final.push_back(s[i]);
     helper(s,i+1,final,ans);
 }
 vector <string> powerSet(string s)
