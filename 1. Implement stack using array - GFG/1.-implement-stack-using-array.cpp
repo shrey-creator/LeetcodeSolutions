@@ -49,11 +49,12 @@ int main()
 void MyStack :: push(int x)
 {
     // Your Code
-    top++;
-    if(top==1000)
+  
+    if(top==999)
     {
         return;
     }
+      top++;
     arr[top]=x;
 }
 
